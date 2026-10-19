@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>New Neighbors Leads – Morgan County weekly new-homeowner list</title>
+<style>
+body{margin:0;font-family:Helvetica,Arial,sans-serif;color:#24301f;background:#eef0ea;line-height:1.55}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+header{background:#2f4a2a;color:#fff;padding:44px 0 38px}
+header .eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9d8b8}
+header h1{font-size:34px;margin:8px 0 10px;line-height:1.2}
+header p{font-size:17px;color:#dfe8d4;margin:0;max-width:640px}
+section{background:#fff;border:1px solid #dfe2d8;border-radius:8px;padding:26px 30px;margin:22px 0}
+h2{font-size:21px;margin:0 0 12px;color:#2f4a2a}
+.grid{display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap}
+.grid ul{flex:1;min-width:260px;margin:0;padding-left:20px}
+.grid li{margin:6px 0}
+.sample{flex:1;min-width:280px;text-align:center}
+.sample img{width:100%;max-width:380px;border:1px solid #d5d9cd;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.sample small{display:block;color:#777;margin-top:6px}
+.prices{display:flex;gap:16px;flex-wrap:wrap}
+.price{flex:1;min-width:200px;background:#f4f6f0;border-radius:6px;padding:16px 18px}
+.price .amt{font-size:26px;font-weight:700;color:#2f4a2a}
+.price.free{background:#fbf6e9;border-left:4px solid #c9a227}
+form{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px}
+label{font-size:13px;font-weight:600;display:block;margin-bottom:4px}
+input,select,textarea{font-family:inherit;width:100%;box-sizing:border-box;padding:9px 10px;border:1px solid #c8ccc0;border-radius:4px;font-size:14px}
+.full{grid-column:1/3}
+button{background:#2f4a2a;color:#fff;border:0;border-radius:4px;padding:11px 22px;font-size:15px;font-weight:600;cursor:pointer}
+.note{font-size:12px;color:#777}
+footer{font-size:12px;color:#777;text-align:center;padding:10px 0 34px}
+@media (max-width:640px){header{padding:30px 0 26px}header h1{font-size:26px}header p{font-size:15px}section{padding:20px 18px}form{grid-template-columns:1fr}.full{grid-column:1}.price .amt{font-size:22px}button{width:100%}}
+footer a{color:#2f4a2a}
+</style></head><body>
+<header><div class="wrap">
+<div class="eyebrow">Fort Morgan · Brush · Wiggins · Log Lane Village · rural Morgan County</div>
+<h1>Know who just moved in, every week.</h1>
+<p>A short weekly email listing homes that just sold in Morgan County, pulled from the county Assessor's public records, for local contractors and agents.</p>
+</div></header>
+<div class="wrap">
+<section>
+<h2>What you get</h2>
+<div class="grid">
+<ul>
+<li>Every residential sale in the county from the past week, usually <b>4–8 homes</b>.</li>
+<li>New owner's name, property address, sale date and price.</li>
+<li>Year built, beds/baths, lot size or acreage.</li>
+<li>Heating type, central A/C (yes/no) and roof type, when the county has it on record.</li>
+<li>A simple flag for likely owner-occupied vs. investor.</li>
+<li>Foreclosures, $0 and family transfers removed.</li>
+<li>A spreadsheet copy you can use for postcards.</li>
+</ul>
+<div class="sample"><img src="sample_email_masked.png" alt="Sample weekly email with names masked"><small>Sample issue: names and street numbers masked.</small></div>
+</div>
+</section>
+<section>
+<h2>Try it free, then decide</h2>
+<div class="prices">
+<div class="price free"><div class="amt">Free</div><b>First 4 weeks</b><br>No card, no contract. If it doesn't help, just don't keep it.</div>
+<div class="price"><div class="amt">$39–49<span style="font-size:14px">/mo</span></div><b>Exclusive</b><br>You're the only business in your trade getting it in Morgan County.</div>
+<div class="price"><div class="amt">$19<span style="font-size:14px">/mo</span></div><b>Shared</b><br>Same weekly list, not exclusive.</div>
+</div>
+<p class="note">Cancel anytime by replying "stop." Exclusive slots are first come, first served, one per trade.</p>
+</section>
+<section>
+<h2>Start the free trial</h2>
+<form action="https://formsubmit.co/newneighborsleads@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New trial signup – New Neighbors">
+<input type="hidden" name="_captcha" value="true">
+<input type="hidden" name="_next" value="https://rokwilder.github.io/new-neighbors/thanks.html">
+<input type="hidden" name="_template" value="table">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<div><label for="n">Your name</label><input id="n" name="name" required placeholder="Jane Smith"></div>
+<div><label for="b">Business name</label><input id="b" name="business" required placeholder="Smith Fence Co."></div>
+<div><label for="t">Trade</label><select id="t" name="trade" required><option value="">Choose one…</option><option>HVAC/heating</option><option>Roofing</option><option>Insurance</option><option>Fence</option><option>Landscaping/lawn</option><option>Pest control</option><option>Other</option></select></div>
+<div><label for="c">County</label><select id="c" name="county" required><option>Morgan County</option><option>Other</option></select></div>
+<div><label for="e">Email to send the list to</label><input id="e" name="email" type="email" required placeholder="you@business.com"></div>
+<div><label for="p">Phone <span style="font-weight:400;color:#777">(optional)</span></label><input id="p" name="phone" type="tel" placeholder="(970) 555-0100"></div>
+<div class="full"><label for="no">Notes <span style="font-weight:400;color:#777">(optional)</span></label><textarea id="no" name="notes" rows="3" placeholder="Anything I should know?"></textarea></div>
+<div class="full"><button type="submit">Send me the free 4 weeks</button>
+<p class="note">I'll only use your email to send the weekly list and the occasional note about it. Reply "stop" anytime.</p></div>
+</form>
+</section>
+</div>
+<footer>New Neighbors Leads · <a href="mailto:newneighborsleads@gmail.com">newneighborsleads@gmail.com</a><br>Data compiled from Morgan County Assessor public records and provided as-is. Not affiliated with Morgan County.</footer>
+</body></html>
